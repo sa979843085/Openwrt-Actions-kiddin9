@@ -201,13 +201,6 @@
 	};
 };
 
-&hnat {
-	mtketh-wan = "wan";
-	mtketh-lan = "lan";
-	mtketh-max-gmac = <2>;
-	status = "okay";
-};
-
 &spi0 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&spi0_flash_pins>;
@@ -323,8 +316,4 @@
 	phys = <&u2port0 PHY_TYPE_USB2>,
 	       <&u3port0 PHY_TYPE_USB3>;
 	status = "okay";
-};
-
-&trng {
-	status = "disabled";
 };
